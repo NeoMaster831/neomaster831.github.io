@@ -10,12 +10,6 @@ draft: false
 
 # Rabin-Karp Breaker Wane
 
-:::note[Credit]
-Wane
-:::
-
-# 라빈-카프 알고리즘?
-
 라빈-카프 알고리즘은 **KMP** (Knuth-Morris-Prett), **Aho-Corasick** 과 같은 문자열 매칭 알고리즘 중 하나로, **라빈-카프 해싱** 을 이용하여 문자열을 $O(N)$ 에 찾는 알고리즘이다. [Ref](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm)
 
 여기서 라빈-카프 알고리즘을 안 쓰는 이유는, 라빈-카프 알고리즘에 사용되는 라빈-카프 해싱을 충돌시키는 데이터 $a$, $b$ 쌍을 *아주* 효율적으로 만들 수 있기 때문이다. 따라서 이 해싱, 혹은 알고리즘을 실제에서 사용한다면 큰 화를 입을 수 있다.

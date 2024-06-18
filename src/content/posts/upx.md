@@ -7,10 +7,6 @@ category: Reversing
 draft: false
 ---
 
-:::note[Credit]
-Wane
-:::
-
 :::note[목차]
 + I. 들어가면서..
 + II. Upx?
