@@ -64,7 +64,7 @@ Upx는 패킹하는 것 외의 작업을 수행하지 않으므로, 패킹을 �
 
 우선 이 원본의 Entry Point 부근 코드를 보자. 나중에 이것이 원본 코드인지 아닌지 확인할 때 도움이 될 것이다.
 
-<img src="https://i.imgur.com/ZeuxMwa.png">
+<img src="/upx/ZeuxMwa.png">
 
 이제 패킹해보자. 패킹하면 다음과 같은 결과가 나온다.
 
