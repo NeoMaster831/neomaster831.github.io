@@ -92,11 +92,11 @@ PE 파일 구조를 분석하게 되면 우선 `.text`, `.data`와 같은 섹션
 
 주목할 점은, Directory Entry의 Import에 UPX2 섹션이, UPX1 섹션이 TLS로 등록되어 있는 것을 볼 수 있다.
 
-<img src="https://i.imgur.com/7q3XlGs.png">
+<img src="/upx/7q3XlGs.png">
 
 새로운 EP는 `0x412100`인데, TLS Callback 함수가 EP보다 먼저 실행되기 때문에 TLS Callback 함수의 주소: `0x4122a0`을 먼저 볼 필요가 있다.
 
-<img src="https://i.imgur.com/1pCX9Zb.png">
+<img src="/upx/1pCX9Zb.png">
 
 보니 딱히 아무것도 안 하고 넘어가서 그냥 EP를 분석하기로 했다.
 
@@ -387,7 +387,7 @@ UPX1:0041229B jmp     near ptr dword_4012E0
 
 이는 디컴파일된 코드에서 `JUMPOUT(0x4012E0)` 의 구문과 같다. 여기의 주소 `0x41229B`에 BP를 설치하고 넘어가보면 다음과 같이 성공적으로 OEP를 찾을 수 있다.
 
-<img src="https://i.imgur.com/IajKlB0.png">
+<img src="/upx/IajKlB0.png">
 
 실제로 원래 바이트코드였던 `83 EC 1C C7 04 24 ...` 를 발견할 수 있다. 이로써 우리는 OEP를 발견해내었다. 여기서부터 프로그램을 디버깅하는 등의 일반적인 원본 프로그램에서 할 수 있던 행위를 모두 할 수 있어졌다.
 

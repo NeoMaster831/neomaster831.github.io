@@ -30,7 +30,7 @@ HV는 정말 강력하고 좋은 기술이지만, 개념이 정말 어렵고 사
 
 이 가상화 기술을 어디에 쓰냐 하면, 한 운영체제의 커널보다 위의 Previlege에서 원초적인 작업 (예를 들어 메모리 접근)을 감독하고 제어하고 싶을 경우 사용하는 기술이다. 가령 HV는 PatchGuard가 보호하는 Syscall Table을 Hooking할 수 있는데, 이는 HV가 PG나 커널보다 높은 Previlege에서 동작하기 때문이다.
 
-<img src="https://miro.medium.com/v2/resize:fit:400/format:webp/1*GB-uW-xbSIHHkkH4eSVKaQ.jpeg">
+<img src="/hypervisor-basics/ring.webp">
 
 중요한 점은 CPU 또한 이 HV 기술을 지원하는데, Intel의 VT-x, AMD의 AMD-V가 있다. 우리는 이 기술을 활용하여 사용자의 컴퓨터를 가상화시킬 수 있고, 사용자가 커널 위에서 나의 컴퓨터에 대한 동작을 제어하게 할 수 있는 프로그램을 제작하는 것이 목표이다.
 
