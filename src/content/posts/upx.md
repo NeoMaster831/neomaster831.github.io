@@ -1,6 +1,6 @@
 ---
 title: "Packer Breaker Pt.1: UPX"
-published: 2023-08-01
+published: 2024-06-13
 description: Let's break down UPX, the traditional packer of the world.
 tags: [UPX, Packer]
 category: Reversing
