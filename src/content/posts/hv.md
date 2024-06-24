@@ -54,6 +54,6 @@ HV는 정말 강력하고 좋은 기술이지만, 개념이 정말 어렵고 사
 
 ## End
 
-:::::github{repo="fukurei/Reisen6900X"}
+::github{repo="fukurei/Reisen6900X"}
 
 앞으로 Hypervisor에 관한 문서들이 업데이트 될 것이다. 그것의 종합적인 소스 코드는 이 레포지토리에서 확인이 가능하다. 지속적인 업데이트로 소스 코드가 변경될 수 있다.
