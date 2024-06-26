@@ -21,17 +21,11 @@ draft: false
 :::note[Solvers]
 
 + ilovecrackmes (298pt, 20 solvers)
-
 + notobfuscated (298pt, 20 solvers)
-
 + bomberman (314pt, 17 solvers)
-
 + x86perm (355pt, 11 solvers)
-
 + arcade (363pt, 10 solvers)
-
 + ieee (406pt, 6 solvers)
-
 + rusty school (406pt, 6 solvers)
 
 :::
@@ -472,19 +466,12 @@ assert lcm(ps, qs) == phi
 :::note[Returns]
 
 0. $g$
-
 1. Big Number CTX Pool
-
 2. $n$
-
 3. $n^2$
-
 4. $\lambda$
-
 5. $\mu$
-
 6. Unknown
-
 7. Unknown
 
 :::
