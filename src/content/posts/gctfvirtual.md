@@ -104,7 +104,7 @@ result = input_array;
   }
 ```
 
-이 코드는 복잡해보이지만 분석해보면 `input_array` 와 `box_array` 의 덧셈이다. 이때 덧셈은 $\text{input\_array[i]}.k.d + \text{box\_array[i]}.k.d$ 를 수행한다, 즉, 복호화를 하고 덧셈을 한다. 이때 260 이상이 된다면 $\text{mod 260}$ 을 실행한다. 즉, 이 함수는 $GF(260)$ 내에서 덧셈 연산을 하는 코드이다.
+이 코드는 복잡해보이지만 분석해보면 `input_array` 와 `box_array` 의 덧셈이다. 이때 덧셈은 $\text{input\_array[i]}.k.d + \text{box\_array[i]}.k.d$ 를 수행한다, 즉, 복호화를 하고 덧셈을 한다. 이때 260 이상이 된다면 $\text{mod 260}$ 을 실행한다. 즉, 이 함수는 $ZZ(260)$ 내에서 덧셈 연산을 하는 코드이다.
 
 **주목할 점은 사람 보통 이렇게 코드를 짜지 않는다는 것이다.** `for i in range(16):` 으로 작성 가능한 코드를 문제의 제작자는 `for i in range(4): for j in range(4):` 와 같이 작성했다. 이것은 `input_array`와 `box_array`가 1x16이 아닌 4x4 의 2차원 배열이라는 것을 암시한다.
 
@@ -170,7 +170,7 @@ for ( j = 0LL; j != 16; ++j )
 
 이건 도무지 뭘 하는지 몰랐지만 결국 한 요소가 한 요소에 대응되므로 브루트 포싱을 돌려서 얻을 수 있었다. 중요한 점은 얘가 일대일대응이 아니라는 점이였다. 하지만 2가지밖에 경우의 수가 없어서 이는 문제가 되지 않았다.
 
-즉, 이 프로그램은 $GF(260)$ 내에서 행렬합과 행렬곱, 그리고 알수없는 루틴을 수행하는 것이였다.
+즉, 이 프로그램은 $ZZ(260)$ 내에서 행렬합과 행렬곱, 그리고 알수없는 루틴을 수행하는 것이였다.
 
 이를 토대로 익스코드를 작성했고 플래그를 얻어냈다.
 
@@ -268,7 +268,7 @@ def decrypt_last_stage(crypted, box):
 
     #print(last_list)
     for i in range(16):
-        # it is not bifunctional I think in GF(260)
+        # it is not bifunctional I think in ZZ(260)
         # assert len(last_list[i]) == 1
         ret.append(last_list[i][0])
         #ret.append(last_list[i][-1]) # This should be work but cannot decrypt the flag
