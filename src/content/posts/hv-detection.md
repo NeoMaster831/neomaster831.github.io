@@ -2,7 +2,7 @@
 title: Hypervisor basics, pt. 3
 published: 2024-11-10
 description: 'Detecting hypervisors in the wild'
-image: '/hv-ept/detect.png'
+image: '/hv-detection/detect.png'
 tags: [Hypervisor, Detection]
 category: 'Hypervisor'
 draft: false 
