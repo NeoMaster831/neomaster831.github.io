@@ -50,7 +50,7 @@ void performRDTSCTimingCheck(){
 }
 ```
 
-- Bypass: `rdtsc` 명령어는 VM Exit을 유발하는 명령어이다. 그 말은 즉슨, VM Exit Handler에서 핸들링할 수 있다는 것이다. 따라서 `rdtsc` 명령어의 반환값을 조작하여
+- Bypass: `rdtsc` 명령어는 VM Exit을 유발하는 명령어이다. 그 말은 즉슨, VM Exit Handler에서 핸들링할 수 있다는 것이다. 따라서 `rdtsc` 명령어의 반환값을 조작하여 판정을 바꿀 수 있다.
 
 ## [0x2] MSR Timing Check
 
