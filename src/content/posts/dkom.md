@@ -2,18 +2,12 @@
 title: Direct Kernel Object Manipulation
 published: 2024-11-27
 description: 'PatchGuard가 없는 시대에 최강이었던 범부여..'
-image: '/dkom/image1'
 tags: [ Kernel ]
 category: 'Windows'
 draft: false 
 ---
 
 쓸 게 없어서 고등학교 1학년 때 조사한 걸 올린다.
-
-<aside>
-💬 “DKOM is just a social evil, not to use.” - Wane
-
-</aside>
 
 # [0x01] 개념
 
