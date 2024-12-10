@@ -1,5 +1,5 @@
 ---
-title: LakeCTF '24-'25 Write-up
+title: LakeCTF '24-'25 Quals Write-up
 published: 2024-12-10
 description: 'Solved two problems :3'
 image: '/lctf-writeup/lctf-logo.png'
@@ -50,7 +50,7 @@ FF 02 FF 01 FF FF FF FF  FF FF FF FF 04 FF FF FF
 
 아직까지는 무엇을 뜻하는지 분간이 안 되지만, 차근차근 분석해나가다 보면 다음과 같이 소수 배열을 찾을 수 있었다.
 
-<img src="/lctf-writeup/3dd.png">
+<img src="/lctf-writeup/2dd.png">
 
 솔직히 여기서 갑자기 소수 배열이 나와서 포기할 뻔 했다. 하지만 차근차근 분석해 나가다 보니, 어떤 값을 계산한 후 그 값을 `0D4C2086` 와 반복하여 비교한다. 그리고 맞는 경우, 어떤 전역 변수를 1 증가시킨다.
 
