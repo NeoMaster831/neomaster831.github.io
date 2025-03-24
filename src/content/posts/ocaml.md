@@ -9,8 +9,11 @@ draft: false
 ---
 
 > OCaml 빌드를 위해 [dune](https://dune.build/)을 이용하였습니다.
+> 
 > 분석을 위해 IDA Professional 9.0 Beta를 사용하였습니다.
+> 
 > 분석을 위해 Binary Ninja 4.2 유료 버전을 사용하였습니다.
+> 
 > OS는 Ubuntu 22.04 (Linux)를 사용하였습니다.
 
 ## OCaml?
