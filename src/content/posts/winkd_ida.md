@@ -8,6 +8,8 @@ category: 'Reversing'
 draft: false 
 ---
 
+Post is also uploaded at [HackMD](https://hackmd.io/@Wane/r17ganS9el). Check it out.
+
 ## Prerequisite
 
 + Windows 10 or later
