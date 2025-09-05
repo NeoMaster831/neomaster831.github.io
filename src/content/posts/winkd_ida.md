@@ -184,7 +184,7 @@ Now we should set breakpoint on our driver's entry when we load it. It is well k
 
 Now go in through `KscpCfgDispatchUserCallTargetEsSmep`, (...or some related to `_guard_dispatch_icall_no_overrides`.) After some step in execution, you can find driver entry!
 
-<img src="/winkd_ida/r1t0NAL9gx.png>
+<img src="/winkd_ida/r1t0NAL9gx.png">
 
 After this, you can now calculate base, and place breakpoint, etc, yeah.
 
