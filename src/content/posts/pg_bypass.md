@@ -2,8 +2,8 @@
 title: Windows 11 24H2 Kernel Patch Protection Analysis
 published: 2025-09-09
 description: "Let's bypass PatchGuard in Windows 11 24H2, on-the-fly."
-image: ''
-tags: [ 'Windows', '']
+image: '/pg_bypass/pg_woman.png'
+tags: [ 'Windows', 'PatchGuard', 'Bypass', 'KPP', 'Win11', '24H2', 'PG' ]
 category: 'Windows'
 draft: false 
 ---
