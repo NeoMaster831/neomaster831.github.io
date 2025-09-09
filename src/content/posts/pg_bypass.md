@@ -700,7 +700,7 @@ PG는 동적 분석이 매우 어려운 프로그램에 속합니다. Windows에
 
 <img src="/pg_bypass/VMDebugging.png">
 
-[VMware](https://www.vmware.com/)는 해당 기능에 대한 지원이 있습니다. VM의 설정 파일(\texttt{.vmx})에 다음과 같은 항목을 추가하면 됩니다.
+[VMware](https://www.vmware.com/)는 해당 기능에 대한 지원이 있습니다. VM의 설정 파일(`.vmx`)에 다음과 같은 항목을 추가하면 됩니다.
 
 ```
 debugStub.listen.guest64 = "TRUE"
