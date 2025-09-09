@@ -874,7 +874,7 @@ Method 7에서 초기화되는 PG 글로벌 컨텍스트 `MaxDataSize`에 접근
 
 ### System Thread & APC
 
-쓰레드나 APC는 내부적으로 `KeDelayExecutionThread`, `KiWaitForSingleObject`, `KiWaitForMultipleObjects`를 호출하여 프로시저 실행을 지연시킵니다. (섹션 [Method 3](#sec:method_3) 참고)  
+쓰레드나 APC는 내부적으로 `KeDelayExecutionThread`, `KiWaitForSingleObject`, `KiWaitForMultipleObjects`를 호출하여 프로시저 실행을 지연시킵니다. (섹션 3.2.10.4 참고)  
 
 따라서 시스템 쓰레드를 순회하며 콜 스택을 조사하고, 리턴 주소에 이 세 함수 중 하나라도 있다면 `KeDelayExecutionThread`를 `DueTime`을 매우 큰 값으로 설정하여 호출함으로써 종료시킬 수 있습니다.  
 
